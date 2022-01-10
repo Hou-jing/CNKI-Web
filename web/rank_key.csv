@@ -1,0 +1,149 @@
+,key,num
+130,synchronization,133
+44,dynamics,103
+132,systems,84
+74,model,79
+43,dynamical networks,76
+123,stability,53
+88,neural-networks,48
+113,scale-free networks,48
+25,community structure,45
+70,internet,45
+139,topology,44
+14,centrality,42
+110,robustness,41
+99,pinning control,41
+29,complex systems,34
+1,adaptive synchronization,33
+50,evolution,30
+33,controllability,29
+118,small-world networks,28
+61,identification,26
+16,chaos,26
+119,social networks,24
+92,optimization,24
+117,small-world,24
+31,consensus,23
+93,organization,22
+2,algorithm,22
+143,vulnerability,20
+24,community detection,19
+56,global synchronization,18
+46,emergence,17
+49,error,17
+84,network topology,16
+81,network robustness,16
+79,multiagent systems,16
+47,entropy,16
+39,design,15
+8,behavior,15
+111,scale-free,15
+112,scale-free network,15
+134,time delay,15
+114,self-similarity,14
+23,community,14
+97,percolation,14
+20,cluster synchronization,14
+18,chaotic systems,14
+109,resilience,13
+101,prediction,12
+13,cascading failures,12
+28,complex dynamical networks,12
+17,chaos synchronization,12
+77,modularity,11
+21,clustering,11
+83,network structure,11
+85,networks,11
+103,projective synchronization,11
+80,network dynamics,10
+131,system,10
+76,models,10
+96,patterns,10
+147,world,10
+59,graphs,10
+90,nodes,9
+72,link prediction,9
+42,dynamical network,9
+87,neural networks,9
+86,neural network,9
+51,exponential synchronization,9
+82,network science,9
+137,time-varying delays,9
+6,arrays,9
+135,time-delay,9
+102,preferential attachment,9
+126,statistical-mechanics,9
+27,complex dynamical network,9
+10,betweenness centrality,9
+19,classification,9
+66,information,9
+40,diffusion,9
+30,congestion,8
+133,systems biology,8
+37,delay,8
+9,betweenness,8
+35,criteria,8
+38,delays,8
+95,outer synchronization,8
+128,synchronisation,8
+125,stabilization,8
+34,coupling delays,8
+94,oscillators,8
+129,synchronizability,8
+0,adaptive control,8
+58,graph theory,8
+89,node importance,8
+52,fractal dimension,8
+3,algorithms,8
+136,time-series,8
+78,motifs,8
+55,genetic algorithm,8
+57,graph,8
+140,topology identification,8
+41,discrete,7
+124,stability analysis,7
+64,influential nodes,7
+4,architecture,7
+107,random graphs,7
+7,attack tolerance,7
+120,spatiotemporal chaos,7
+62,impulsive control,7
+5,array,7
+48,epidemics,7
+45,efficiency,7
+138,tolerance,6
+141,traffic flow,6
+142,transportation,6
+127,structural controllability,6
+144,weighted complex networks,6
+146,weighted networks,6
+121,spread,6
+60,heterogeneity,6
+104,propagation,6
+65,influential spreaders,6
+54,functional connectivity,6
+68,information theory,6
+67,information dimension,6
+36,degree,6
+100,power,6
+105,protein complex,6
+108,ranking,6
+32,control,6
+26,complex adaptive systems,6
+22,communication networks,6
+116,simulation,6
+15,centrality measures,6
+75,modeling,6
+71,lag synchronization,5
+145,weighted network,5
+69,interactome,5
+63,impulsive synchronization,5
+11,biological networks,5
+73,map,5
+53,free dynamical networks,5
+91,nonlinear dynamical systems,5
+12,brain networks,5
+106,protein-interaction networks,5
+115,sensor networks,5
+122,spreaders,5
+98,performance,5

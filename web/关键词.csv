@@ -1,0 +1,149 @@
+key,num
+adaptive control,8
+adaptive synchronization,33
+algorithm,22
+algorithms,8
+architecture,7
+array,7
+arrays,9
+attack tolerance,7
+behavior,15
+betweenness,8
+betweenness centrality,9
+biological networks,5
+brain networks,5
+cascading failures,12
+centrality,42
+centrality measures,6
+chaos,26
+chaos synchronization,12
+chaotic systems,14
+classification,9
+cluster synchronization,14
+clustering,11
+communication networks,6
+community,14
+community detection,19
+community structure,45
+complex adaptive systems,6
+complex dynamical network,9
+complex dynamical networks,12
+complex systems,34
+congestion,8
+consensus,23
+control,6
+controllability,29
+coupling delays,8
+criteria,8
+degree,6
+delay,8
+delays,8
+design,15
+diffusion,9
+discrete,7
+dynamical network,9
+dynamical networks,76
+dynamics,103
+efficiency,7
+emergence,17
+entropy,16
+epidemics,7
+error,17
+evolution,30
+exponential synchronization,9
+fractal dimension,8
+free dynamical networks,5
+functional connectivity,6
+genetic algorithm,8
+global synchronization,18
+graph,8
+graph theory,8
+graphs,10
+heterogeneity,6
+identification,26
+impulsive control,7
+impulsive synchronization,5
+influential nodes,7
+influential spreaders,6
+information,9
+information dimension,6
+information theory,6
+interactome,5
+internet,45
+lag synchronization,5
+link prediction,9
+map,5
+model,79
+modeling,6
+models,10
+modularity,11
+motifs,8
+multiagent systems,16
+network dynamics,10
+network robustness,16
+network science,9
+network structure,11
+network topology,16
+networks,11
+neural network,9
+neural networks,9
+neural-networks,48
+node importance,8
+nodes,9
+nonlinear dynamical systems,5
+optimization,24
+organization,22
+oscillators,8
+outer synchronization,8
+patterns,10
+percolation,14
+performance,5
+pinning control,41
+power,6
+prediction,12
+preferential attachment,9
+projective synchronization,11
+propagation,6
+protein complex,6
+protein-interaction networks,5
+random graphs,7
+ranking,6
+resilience,13
+robustness,41
+scale-free,15
+scale-free network,15
+scale-free networks,48
+self-similarity,14
+sensor networks,5
+simulation,6
+small-world,24
+small-world networks,28
+social networks,24
+spatiotemporal chaos,7
+spread,6
+spreaders,5
+stability,53
+stability analysis,7
+stabilization,8
+statistical-mechanics,9
+structural controllability,6
+synchronisation,8
+synchronizability,8
+synchronization,133
+system,10
+systems,84
+systems biology,8
+time delay,15
+time-delay,9
+time-series,8
+time-varying delays,9
+tolerance,6
+topology,44
+topology identification,8
+traffic flow,6
+transportation,6
+vulnerability,20
+weighted complex networks,6
+weighted network,5
+weighted networks,6
+world,10
