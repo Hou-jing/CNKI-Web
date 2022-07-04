@@ -38,9 +38,11 @@ driver.get(img_base_url)
 img_ = driver.get_screenshot_as_png()
 f = open('抓取1.png', 'wb')
 f.write(img_)
+#图片裁剪，不能直接request.get()因为，图片会刷新，验证码会识别失败，其次，必须在新界面打开，保证验证码不在刷新
 cropped = Image.open("抓取1.png").crop((530, 380, 750, 500))  # (left, upper, right, lower)
 cropped.save('code.png')
 ocr = ddddocr.DdddOcr()
+#验证码识别
 res = ocr.classification(open('code.png', 'rb').read())
 driver.switch_to.window(driver.window_handles[-2])
 driver.find_element_by_xpath('//*[@id="verifyCode"]').send_keys(res)
