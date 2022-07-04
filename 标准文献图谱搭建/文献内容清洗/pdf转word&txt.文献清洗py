@@ -1,0 +1,90 @@
+#针对PDF转为word文档的“征求意见.csv"文件做的数据清洗
+import re
+
+import pandas as pd
+df=pd.read_csv('ori_file/征求意见类.csv')
+
+new_dt={'标准名':[],
+        '英文名':[],
+        '标准状态':[],
+        '标准目录':[],
+        '标准范围':[],
+        '标准引用文件':[],
+        '标准术语':[],
+        '标准内容':[]
+        }
+
+
+#标准名
+fname=[i.replace(' ','') for i in df['file_name']]
+pname=r'([\u4e00-\u9fa5]{2,}).txt'
+new_dt['标准名']=[re.findall(pname,i)[0] for i in fname]
+# print(new_dt['标准名'])
+#标准英文名
+ename=[]
+for i in df['english_name']:
+        if type(i)==str:
+                if 'GB' in i:
+                        ena=re.findall(r'CS .+?[a-z,A-Z]{3,}.+?GB',i,re.M|re.S|re.I)[0]
+                        ena=re.sub(r'CS|GB|XX|MOD|NEQ|','',ena,re.M|re.S|re.I)
+                        ename.append(ena.replace('GB','').replace('XX','').replace('  ','').replace('       ',''))
+                else:
+                        ename.append(i)
+        else:
+                ename.append(None)
+new_dt['英文名']=ename
+# print(new_dt['英文名'])
+#标准目录
+for i in df['graft_catalogs']:
+        if type(i)==str and i!='-':
+                new_dt['标准目录'].append(i)
+        else:
+                new_dt['标准目录'].append(None)
+
+#标准引用文件
+import ast
+for i in df['refer_res']:
+        new_ref=[]
+        if i != '-':
+                i=ast.literal_eval(i)
+                for j in i:
+                        id=re.findall('([a-z,A-Z].+?)[\u4e00-\u9fa5]{1,}',j,re.M|re.I|re.S)
+                        name=''.join([i for i in re.findall(r"[\u4e00-\u9fa5]{1,}.+?",j,re.M|re.S|re.I)])
+                        if name and id:
+                                new_ref.append((id[0],name))
+        else:
+                new_ref.append(None)
+        new_dt['标准引用文件'].append(new_ref)
+
+#标准术语
+for i in df['onym_res']:
+        new_dt['标准状态'].append('征求意见')
+        onyms=[]
+        if i!='-':
+                i = ast.literal_eval(i)
+                for j in i:
+                        if re.findall('^[\u4e00-\u9fa5]{1,}\s+[a-z,A-Z].+?[\u4e00-\u9fa5]{1,}',j,re.M|re.S|re.I):
+                                chinp=r'^([\u4e00-\u9fa5]{1,})\s+[a-z,A-Z]'
+                                chiname=''.join([q for q in re.findall(chinp,j,re.M|re.S)])
+                                eng=r'^[\u4e00-\u9fa5]{1,}\s+[a-z,A-Z](.+?)[\u4e00-\u9fa5]{1,3}'
+                                ename=''.join([q for q in re.findall(eng,j,re.M|re.S|re.I)])
+                                definp=r'^[\u4e00-\u9fa5]{1,}\s+[a-z,A-Z].+?([\u4e00-\u9fa5]{1,})'
+                                defin=''.join([q for q in re.findall(definp,j,re.M|re.S|re.I)])
+                                onyms.append((chiname,ename,defin))
+                        else:
+                                onyms.append(None)
+        else:
+                onyms.append(None)
+        new_dt['标准术语'].append(onyms)
+
+new_dt['标准内容']=df['num_res']
+
+#范围
+pattern_cope=r'本文件.*?。|本标准.*?。|本指导.*?。|'
+for i in df['scope']:
+        scop=re.findall(pattern_cope,i,re.M|re.S|re.I)
+        new_dt['标准范围'].append(scop)
+
+New_df=pd.DataFrame.from_dict(new_dt,orient='index')
+New_df=New_df.T
+New_df.to_csv('new_参考文献.csv',mode='w+',encoding='utf_8',index=False)
