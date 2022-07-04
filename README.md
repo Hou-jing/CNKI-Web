@@ -24,11 +24,11 @@
 可视化展示结果如下（部分在PNG格式下，属性无法展示，因此，单列在下方）：
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7b05e5ebce6d4c22ab8d702965029b5f.png)
+![图1 关系类型为标准范围的可视化图](https://img-blog.csdnimg.cn/7b05e5ebce6d4c22ab8d702965029b5f.png)
 
-图1 关系类型为标准范围的可视化图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a824ca378a4f4c988c5eb42d5456e899.png)
-图2 关系类型为界定术语的可视化图
+
+![图2 关系类型为界定术语的可视化图](https://img-blog.csdnimg.cn/a824ca378a4f4c988c5eb42d5456e899.png)
+
 
 
 
